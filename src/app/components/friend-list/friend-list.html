@@ -1,0 +1,46 @@
+
+<section class="card" id="amis">
+
+  <div class="icon">👥</div>
+
+  <div class="friends-content">
+
+    <h2>Liste des amis</h2>
+
+    <!-- Champs modifiables -->
+    <div class="friend-inputs">
+
+      @for (friend of friends; track $index) {
+        <input
+          type="text"
+          [(ngModel)]="friends[$index]"
+        >
+      }
+
+    </div>
+
+    <!-- Liste des amis -->
+    <ul>
+      @for (friend of friends; track $index) {
+        <li>{{ friend }}</li>
+      }
+    </ul>
+
+    <!-- Ajouter un ami -->
+    <div class="add-friend">
+
+      <input
+        type="text"
+        [(ngModel)]="friendName"
+        placeholder="Nom de l'ami"
+      >
+
+      <button (click)="addFriend()">
+        Ajouter
+      </button>
+
+    </div>
+
+  </div>
+
+</section>

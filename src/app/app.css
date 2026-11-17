@@ -1,0 +1,16 @@
+
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+app-header,
+app-navbar,
+app-profile,
+app-friend-list,
+app-notifications,
+app-conference-list,
+app-footer {
+  display: block;
+}

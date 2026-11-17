@@ -1,0 +1,75 @@
+
+.card {
+  background: white;
+  border-left: 5px solid #26a269;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #e7f7ef;
+  font-size: 27px;
+}
+
+.friends-content {
+  flex: 1;
+}
+
+h2 {
+  color: #173b67;
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.friend-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.friend-inputs input {
+  width: 145px;
+  padding: 6px 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+ul {
+  padding-left: 18px;
+  margin: 12px 0;
+}
+
+.add-friend {
+  display: flex;
+  gap: 10px;
+}
+
+.add-friend input {
+  width: 178px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.add-friend button {
+  background: #26a269;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.add-friend button:hover {
+  background: #188653;
+}
